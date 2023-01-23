@@ -76,8 +76,8 @@ export function renderModel(
         bloomRadius: 0.5
     };
 
+    // Adding some fog.
     const fog : THREE.Fog = new THREE.Fog(new THREE.Color(0xFF7BAC), 1, 10)
-
     scene.fog = fog;
 
     // A shader to make individual meshes glow up. (Pillars on the corners.)
