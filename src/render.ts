@@ -9,16 +9,6 @@ import * as THREE from 'three';
 // Importing the GLTF 2.0 loader.
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-import { ColorifyShader } from 'three/examples/jsm/shaders/ColorifyShader.js';
-
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
-
-// Importing the film pass.
-import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass.js';
-
-// Importing the dot screen pass.
-import { DotScreenPass } from 'three/examples/jsm/postprocessing/DotScreenPass.js';
-
 // Importing the shader for object glow-up.
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 
@@ -49,8 +39,10 @@ export function renderModel(
         1000
     );
 
+    // Used to be: 020201
+
     // Setting the background color.
-    scene.background = new THREE.Color(0x020201);
+    scene.background = new THREE.Color(0x000000);
 
     // Something has to render our scene.
     // We use the "standard" WebGL renderer.
@@ -78,11 +70,15 @@ export function renderModel(
 
     // Parameters for making named objects emit light.
     const params = {
-        exposure: 0.5,
-        bloomStrength: 3,
+        exposure: 0,
+        bloomStrength: 2,
         bloomThreshold: 0,
-        bloomRadius: 1
+        bloomRadius: 0.5
     };
+
+    const fog : THREE.Fog = new THREE.Fog(new THREE.Color(0xFF7BAC), 1, 10)
+
+    scene.fog = fog;
 
     // A shader to make individual meshes glow up. (Pillars on the corners.)
 	const bloomPass = new UnrealBloomPass(
