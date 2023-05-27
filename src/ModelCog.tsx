@@ -30,7 +30,7 @@ export class ModelCog extends React.Component {
     // is synced up.
     componentDidMount(): void {
         let symbolName: string = 'Moon';
-        let modelURL: string = 'https://angeldollface.art/assets/models/MoonGlowing.glb';
+        let modelURL: string = 'https://angeldollface.art/doll-cdn/models/MoonGlowing.glb';
         renderModel(
             modelURL,
             symbolName
