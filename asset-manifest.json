@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hexa/static/css/main.dccf9dd2.css",
-    "main.js": "/hexa/static/js/main.70183df9.js",
+    "main.js": "/hexa/static/js/main.125df4fd.js",
     "index.html": "/hexa/index.html",
     "main.dccf9dd2.css.map": "/hexa/static/css/main.dccf9dd2.css.map",
-    "main.70183df9.js.map": "/hexa/static/js/main.70183df9.js.map"
+    "main.125df4fd.js.map": "/hexa/static/js/main.125df4fd.js.map"
   },
   "entrypoints": [
     "static/css/main.dccf9dd2.css",
-    "static/js/main.70183df9.js"
+    "static/js/main.125df4fd.js"
   ]
 }
