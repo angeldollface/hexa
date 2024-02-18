@@ -10,7 +10,7 @@ Since I'm working on a new design for my main site and I'd like some sort of 3D 
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.art/hexa)
+To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.boo/hexa)
 
 ## LEARN AND RE-USE :thinking: :sparkles:
 
